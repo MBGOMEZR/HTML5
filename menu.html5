@@ -1,6 +1,24 @@
-
 <html>
 <body>
+<h2> MENU </h2>
+<canvas id="myCanvas" width="600" style="border:1px solid #000000;">
+</canvas>
 
+<button id="btn"> Ejecutar </button>
+<script>
+
+$(document).ready(function(){
+	$("#btn").click(function(){
+	
+		var context=document.getElementById("myCanvas").getContext("2d");
+		context.strokeStyle="green";
+		context.fillStyle="red";
+		context.strokeRect(70,70,80,80);
+		context.fillRect(80,80,60,60);
+		context.clearRect(95,95,30,30);
+
+	});
+});
+</script>
 </body>
 </html>
